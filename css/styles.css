@@ -1,0 +1,49 @@
+
+:root {
+    --primary-text-color: ;
+    --title-text-color: #212121;
+    --accent-color: blue;
+    --secondary-accent-color: ;
+    --primary-background-color: #F5F5F5;
+    --main-background-color: #2F303A;
+    --focus-hover-color: #188CE8;
+    --secondary-background-color: #ffffff;
+  }/*---------------------------------MAIN---------------------------------------*/
+
+  
+
+  .main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var (--title-text-color);
+  }
+  
+  .btn {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--secondary-accent-color);
+    background-color: var(--accent-color);
+  }
+  
+  .main-button:hover
+   {
+      background-color: var(--focus-hover-color);
+      color: var(--secondary-accent-color);
+  }
+  .main-button:focus {
+      background-color: var(--focus-hover-color);
+      color: var(--secondary-accent-color);
+  }
