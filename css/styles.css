@@ -1,17 +1,59 @@
 
 :root {
-    --primary-text-color: ;
     --title-text-color: #212121;
     --accent-color: blue;
-    --secondary-accent-color: ;
-    --primary-background-color: #F5F5F5;
-    --main-background-color: #2F303A;
     --focus-hover-color: #188CE8;
-    --secondary-background-color: #ffffff;
-  }/*---------------------------------MAIN---------------------------------------*/
-
+    --secondary-accent-color: #f2f2f2;
+  }
   
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
 
+
+  *{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+  }
+  
+  /*---------------------------------MAIN---------------------------------------*/
+
+  .main {
+    display: flex;
+    flex-direction:column;
+
+  }
+
+  .main-div-section {
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-image: url("../images/main-background.jpg");
+    background-size: cover;
+    
+  }
+.main-div-section div {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid blue;
+}
+
+.container {
+    display:flex;
+    height:100vh;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
   .main-title {
     font-weight: 900;
     font-size: 44px;
@@ -34,8 +76,8 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--secondary-accent-color);
     background-color: var(--accent-color);
+    color: var(--secondary-accent-color);
   }
   
   .main-button:hover
@@ -46,4 +88,66 @@
   .main-button:focus {
       background-color: var(--focus-hover-color);
       color: var(--secondary-accent-color);
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid blue; /* Blue border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=send-button] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  /* When moving the mouse over the submit button, add a focus-hover-color */
+  input[type=send-button]:hover {
+    background-color: var(--focus-hover-color);
+  }
+  
+ 
+  
+/*---------------------------------FOOTER---------------------------------------*/
+  /* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Instagram */
+  .fa-instagram {
+    background: #ac2bac;
+    color: white;
+  }
+
+   /* GitHub */
+   .fa-github {
+    background: #333333;
+    color: white;
   }

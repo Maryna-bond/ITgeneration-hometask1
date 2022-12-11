@@ -9,35 +9,37 @@
 </head>
 <body>
     <main class="main">
-        <div class="main-div" style="background-image: url('main-background.jpg');">
+        <div class="main-div container" style="background-image: url('main-background.jpg');">
             <section class="main-div-section">
+                <div>
                 <h1 class="main-title">Let's get acquainted</h1>
                 <button class="btn main-button" type="button">About me</button>
+            </div>
             </section>
         </div>
     
     <nav class="navigation">
         <ul class="list">
             <li class="">
-                <a class="" href="">About</a>
+                <a class="" href="#About">About</a>
             </li>
             <li>
-                <a class="" href="">Experience</a>
+                <a class="" href="#Experience">Experience</a>
             </li>
             <li>
-                <a class="" href="">Interest's</a>
+                <a class="" href="#Interest's">Interest's</a>
             </li>
             <li>
-                <a class="" href="">Get in touch</a>
+                <a class="" href="#Get-in-touch">Get in touch</a>
             </li>
         </ul>
     </nav>
 
-    <section>
+    <section id="About" class="container">
         <h2>About</h2>
-        <img src="./images/close-up-image-1.jpg" alt="my-photo" width="370" height="294" />
+        <img src="./images/my-photo.jpg" alt="my-photo" width="320" height="425" />
         <p>some information about me</p>
-        <ul>
+        <ul class="list">
             <li>
                 <h3>My strenghts</h3>
                 <p>Little overview</p>
@@ -51,30 +53,67 @@
                 <p>Little overview</p>
             </li>
         </ul>
-        <a href="">To top</a>
+        <a href="#">To top</a>
     </section>
 
-    <section class="container">
+    <section id="Experience" class="container">
         <h2>Experience</h2>
-        <div class="square1">Describe your professional experience not in FrontEnd</div>
-        <div class="donat">Donat</div>
+        <div class="makeup">
+            <img src="./images/makeup.jpg" alt="girl-with-makeup" width="320" height="425"/>
+            Describe your professional experience not in FrontEnd</div>
+        <div class="donat">
+            <img src="./images/diagrama.jpg" alt="donat-diagrama" width="320" height="425"/>
+            Donat</div>
         <div class="square2">Describe your professional experience in FrontEnd</div>
-        <a href="">To top</a>
+        <a href="#">To top</a>
     </section>
-    <section>
+
+    <section id="Interest's" class="container">
         <h2>Interest's</h2>
-        <ul>
+        <ul class="list">
             <li>
+                <h3>Longboard dancing</h3>
                 <p>Small Overview</p>
-                <a href="" alt="interest1"></a>
+                <img src="./images/longboard_dancing.jpg" alt="girl-on-longboard" width="340" height="425"/>
             </li>
             <li>
+                <h3>Snowboarding</h3>
                 <p>Small Overview</p>
-                <a href="" alt="interest2"></a>
+                <img src="./images/snowboarding.jpg" alt="girl-on-snowboard" width="360" height="425"/>
             </li>
         </ul>
+        <a href="#">To top</a>
     </section>
 
+    <div id="Get-in-touch" class="container">
+        <h2>Get In Touch</h2>
+        <p>Some information about why we need be in touch=)</p>
+        <form action="action_page.php">
+
+          <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+          <input type="text" id="email" name="email" placeholder="Email Address">
+          <input type="text" id="fname" name="fullname" placeholder="Full Name">
+          <input type="send-button" value="Send">
+      
+        </form>
+      </div>
+
     </main>
+
+    <footer class="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="https://www.facebook.com/bondarenkoo.m" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/bondarenko.m.marina/?hl=en" class="fa fa-instagram"></a>
+        <a href="https://github.com/Maryna-bond" class="fa fa-github"></a>
+        
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; <em id="date"></em> 2022 Copyright:
+          <a class="text-white" href="#">My company name</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      
 </body>
 </html>
