@@ -58,11 +58,19 @@ margin: 0;
 }
 
 .container {
-    display:flex;
+    display: flex;
     height:100vh;
     width: 100%;
     border-bottom: 1px solid grey;
 }
+.section {
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
   .main-title {
     font-weight: 900;
     font-size: 44px;
@@ -124,9 +132,88 @@ margin: 0;
 
   /*---------------------------------SECTIONS---------------------------------------*/
 
+  section {
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
 
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
+.about-me {
   
+    font-size: 1.14rem;
+    line-height: 1.35;
+    text-align: center;
+    margin: 0 auto 1.5rem;
+    max-width: 800px;
+    
+}
 
+ul {
+    list-style-type: none;
+  }
+  
+  li {
+    margin: 4px 0;
+  }
+  
+  h3::before {
+    font-family: sans-serif;
+    content: "✔";
+    color: gray;
+    display: inline-block;
+    width: 1em;
+    background: white;
+    padding-left: 3px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-right: 1em;
+  }
+
+.about-list {
+    display: flex;
+    list-style: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 20px;
+    font-size: 22px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.p-list {
+    font-size: 16px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 20px;
+    font-size: 22px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid grey;
+}
  /*---------------------------------GET IN TOUCH---------------------------------------*/
 
   /* Style inputs with type="text", select elements and textareas */
