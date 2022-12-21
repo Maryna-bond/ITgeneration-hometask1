@@ -35,7 +35,7 @@
         </ul>
     </nav>
 
-    <section id="About" class="section">
+    <section id="About" class="about">
         <h2>About</h2>
 
         <div class="about-content" >
@@ -62,42 +62,74 @@
         </div>
         </div>
 
-        <a style="background-color: yellow;" href="#About">To top</a>
+        <a class="link-to-about link"  href="#About">To top</a>
     </section>
 
-    <section id="Experience" >
+    <section id="Experience" class="experience">
         <h2>Experience</h2>
-        <div class="experience" style="background-color: red;">
+        <div class="experience">
             <div class="makeup">
-                <img src="./images/makeup.jpg" alt="girl-with-makeup" width="200" height="300"/>
-                <p>Describe your professional experience not in FrontEnd</p>
+                <div class="makeup-experience">
+                    <p>I worked as a makeup artist for 7 years. 
+                        I had a beautiful working office in the center of Kharkov. 
+                        For the last 7 years I have met a lot of beautiful and kind people. 
+                        I loved my job. 
+                    </p>
+                </div>
+                <div class="donat">
+                    <img src="./images/diagrama.jpg" alt="donut-diagrama" width="300" height="300"/>
+                <p>Donut</p>
+                </div>
+                <div class="frontend-experience">
+                    <p>Describe your professional experience in FrontEnd
+                        I worked as a makeup artist for 7 years. 
+                        I had a beautiful working office in the center of Kharkov. 
+                        For the last 7 years I have met a lot of beautiful and kind people. 
+                        I loved my job.
+                    </p>
+                </div>
             </div>
-            <div class="donat">
-                <img src="./images/diagrama.jpg" alt="donat-diagrama" width="200" height="300"/>
-                <p>Donat</p>
-            </div>
-            <div class="frontend">
-                <img src="./images/frontend-girl.jpg" alt="html-css-js" width="200" height="300"/>
-                <p>Describe your professional experience in FrontEnd</p></div>
-            </div>
-        <a style="background-color: yellow;" href="#About">To top</a>
+        </div>
+            
+        <a class="link-to-about link"  href="#About">To top</a>
     </section>
 
-    <section id="Interest's" class="">
-        <h2>Interest's</h2>
-        <ul class="list">
-            <li>
-                <h3>Longboard dancing</h3>
-                <p>Small Overview</p>
-                <img src="./images/longboard_dancing.jpg" alt="girl-on-longboard" width="300" height="380"/>
-            </li>
-            <li>
-                <h3>Snowboarding</h3>
-                <p>Small Overview</p>
-                <img src="./images/snowboarding.jpg" alt="girl-on-snowboard" width="300" height="380"/>
-            </li>
-        </ul>
-        <a href="#About">To top</a>
+    
+
+    <section id="Interest's" class="interests">
+        <div>
+            <div class="headline">
+                <h2 class="headline-title">Interest's</h2>
+            </div>
+
+            <div class="interests-list">
+                <div class="interest1">
+                    <div class="longboard-img">
+                        <img src="./images/longboard_dancing.jpg" alt="girl-on-longboard" width="220" height="280"/>
+                    </div>
+                    <div>
+                        <h4>Longboard dancing</h3>
+                        <p class="interest2">Longboard dancing is a form of street skating that combines tricks and moves with dancing, while longboarding is simply riding a longboard for transportation or recreation.
+
+                            Longboard dancers often use their boards to do tricks and spins, and they often choreograph their movements to music. This makes longboard dancing a very creative and unique activity.</p>
+                    </div>
+                </div>
+
+                <div class="interest2">
+                    <div class="snowboard-img">
+                        <img src="./images/snowboarding.jpg" alt="girl-on-snowboard" width="235" height="280"/>
+                    </div>
+                    <div>
+                        <h4>Snowboarding</h3>
+                        <p class="interest2">Snowboarding is a winter sport that involves descending a slope that is covered with snow while standing on a board attached to a rider’s feet, using a special boot set onto a mounted binding.</p>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="to-top-link link">
+                <a class="link-to-about link" href="#About">To top</a> 
+            </div>
+        </div>
     </section>
 
     <div id="Get-in-touch" class="container">
