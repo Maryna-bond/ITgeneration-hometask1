@@ -39,7 +39,9 @@
         <h2>About</h2>
 
         <div class="about-content" >
+            <div class="image_align">
             <img src="./images/my-photo.jpg" alt="my-photo" width="320" height="425" />
+            </div>
             <div>
                 <p class="about-me">My name is Marina Bondarenko. I'm a make-up artist from Kharkiv. I take part in this camp because I want to change something in my life and to have an ability to relocate to other countries. This is important for me because I want to be more finantial independance and work in a good team with smart people, which dont beelive in numerology and  horoscopes.
                 </p>
@@ -104,7 +106,7 @@
 
     
 
-    <section id="Interest's" class="interests">
+    <section id="Interest's" class="">
         <div>
             <div class="headline">
                 <h2 class="headline-title">Interest's</h2>
@@ -113,7 +115,7 @@
             <div class="interests-list">
                 <div class="interest1">
                     <div class="longboard-img">
-                        <img src="./images/longboard_dancing.jpg" alt="girl-on-longboard" width="220" height="280"/>
+                        <img src="./images/longboard_dancing.jpg" alt="girl-on-longboard"   height="240"/>
                     </div>
                     <div>
                         <h4>Longboard dancing</h3>
@@ -125,7 +127,7 @@
 
                 <div class="interest2">
                     <div class="snowboard-img">
-                        <img src="./images/snowboarding.jpg" alt="girl-on-snowboard" width="235" height="280"/>
+                        <img src="./images/snowboarding.jpg" alt="girl-on-snowboard"  height="240"/>
                     </div>
                     <div>
                         <h4>Snowboarding</h3>
@@ -134,40 +136,51 @@
                 </div>
             </div>
 
-            <div class="to-top-link link">
-                <a class="link-to-about link" href="#About">To top</a> 
-            </div>
-        </div>
+        <a class="link-to-about link"  href="#About">To top</a>
+    </div>
     </section>
 
-    <div id="Get-in-touch" class="container">
-        <h2>Get In Touch</h2>
-        <p>Some information about why we need be in touch=)</p>
-        <form action="action_page.php">
+    <section id="Get-in-touch" class="bottom_getintouch">
+        <div class="footer_line">
+            <h2>Get In Touch</h2>
+            <div class="text-center">
+            <p class="p_getintouch">I’m new to JavaScript but interested in Frontend Development. 
+                I really enjoy studying HTML/CSS/JS and would like to become a part of this profession. 
+                I’d definitely like to stay up-to-date on this career.</p>
+            </div>
+            <div class="get_in_touch_form">
+                <form action="#" class="">
+                    <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+                    <div>
+                    <input type="text" id="email" name="email" placeholder="Email Address">
+                    <input type="text" id="fname" name="fullname" placeholder="Full Name">
+                    <input type="send-button" value="Send">
+                    </div>
+            </form>
+            </div>
+        </div>
+    
+        <footer class="">
+            <div class="accounts">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <a href="https://www.facebook.com/bondarenkoo.m" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/bondarenko.m.marina/?hl=en" class="fa fa-instagram"></a>
+                <a href="https://github.com/Maryna-bond" class="fa fa-github"></a>
+            </div>
 
-          <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-          <input type="text" id="email" name="email" placeholder="Email Address">
-          <input type="text" id="fname" name="fullname" placeholder="Full Name">
-          <input type="send-button" value="Send">
-      
-        </form>
-      </div>
+        <div class="text-center" >
+            &copy; <em id="date"></em> 2022 Maryna Bondarenko
+        </div>
 
+        <div class=" link">
+            <a class="link-to-about link" href="#About">To top</a> 
+        </div>
+    
+        </footer>
+    </section>
     </main>
 
-    <footer class="">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <a href="https://www.facebook.com/bondarenkoo.m" class="fa fa-facebook"></a>
-        <a href="https://www.instagram.com/bondarenko.m.marina/?hl=en" class="fa fa-instagram"></a>
-        <a href="https://github.com/Maryna-bond" class="fa fa-github"></a>
-        
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            &copy; <em id="date"></em> 2022 Copyright:
-          <a class="text-white" href="#">My company name</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
+    
 
       
 </body>
